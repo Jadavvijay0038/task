@@ -1,0 +1,24 @@
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Product Details</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-4">
+      <ul class="list-group">
+        <ng-container *ngFor="let item of categories">
+          <li (click)="selectedCat(item)" class="list-group-item"
+            ngClass="'list-group-item-primary' item.id == selectedcatid"> {{item.title}}</li>
+        </ng-container>
+      </ul>
+    </div>
+    <div class="col-6 col-md-8">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item" *ngFor="let item of items">{{item.title}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
