@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   categories: Catagory[] = [];
   items: any;
   selectedCategoryId = '';
+selectedCatId: any;
 
   constructor(private apiService: ApiServiceService) { }
 

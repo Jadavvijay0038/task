@@ -11,7 +11,7 @@
       <ul class="list-group">
         <ng-container *ngFor="let item of categories">
           <li (click)="selectedCat(item)" class="list-group-item"
-            ngClass="'list-group-item-primary' item.id == selectedcatid"> {{item.title}}</li>
+            [ngClass]="{'list-group-item-primary': item.id === selectedCategoryId}"> {{item.title}}</li>
         </ng-container>
       </ul>
     </div>
