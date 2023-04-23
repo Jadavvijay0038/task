@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 export class AppComponent implements OnInit {
   title = 'App-test';
   categories: Catagory[] = [];
-  items: any;
+  items:any = [];
   selectedCategoryId = '';
 selectedCatId: any;
 

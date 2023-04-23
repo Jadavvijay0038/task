@@ -7,7 +7,7 @@
 <div class="container mt-5">
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <ul class="list-group">
         <ng-container *ngFor="let item of categories">
           <li (click)="selectedCat(item)" class="list-group-item"
@@ -15,14 +15,13 @@
         </ng-container>
       </ul>
     </div>
-    <div class="col-6 col-md-8">
+    <div class="col-6 col-md-9">
       <ul class="list-group list-group-flush">
         <li class="list-group-item" *ngFor="let item of items">{{item.title}}</li>
       </ul>
       <div class="no-data-found" *ngIf="items.length == 0">
         <p>No data found.</p>
       </div>
-
     </div>
   </div>
 </div>

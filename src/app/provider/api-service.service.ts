@@ -42,7 +42,7 @@ export class ApiServiceService {
   getCat(): Observable<Catagory[]> {
     return this._http
       .get<any>(
-        'http://android-api.testbazaar.in/v1/catalog/categories?ProductTypes=MockTest&BypassCache=true'
+        'http://android-api.testbazaar.in/v1/catalog/categories/list'
       )
       .pipe(map((response: any) => response.data));
   }
